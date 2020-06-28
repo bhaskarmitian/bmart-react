@@ -1,16 +1,16 @@
 import React from 'react';
-import Sidebar from './Sidebar';
+//import Sidebar from './Sidebar';
 import Toolbar from './Toolbar';
 import Footer from './Footer';
-import Content from './Content';
+//import Content from './Content';
 import Body from './Body';
 
 const Layout = (props) => {
   return (
     <div>
       <Toolbar />
-        <Sidebar/>
-        <Content/>
+        {/*<Sidebar/>
+         <Content/> */}
         <Body/>
        <Footer/>
      </div>

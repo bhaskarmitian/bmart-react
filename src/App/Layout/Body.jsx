@@ -1,671 +1,571 @@
 import React from 'react'
-import '../asserts/css/animate.css'
-import '../asserts/css/main.css'
+//import '../asserts/css/animate.css'
+//import '../asserts/css/main.css'
 
 
 export default function Body() {
     return (
-        <div>
-      
-  <section>
-    <div className="container">
-      <div className="row">
-        <div className="col-sm-3">
-          <div className="left-sidebar">
-            <h2>Category</h2>
-            <div className="panel-group category-products" id="accordian">{/*category-productsr*/}
-              <div className="panel panel-default">
-                <div className="panel-heading">
-                  <h4 className="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordian" href="#sportswear">
-                      <span className="badge pull-right"><i className="fa fa-plus" /></span>
-                      Sportswear
-                    </a>
-                  </h4>
-                </div>
-                <div id="sportswear" className="panel-collapse collapse">
-                  <div className="panel-body">
-                    <ul>
-                      <li><a href="#">Nike </a></li>
-                      <li><a href="#">Under Armour </a></li>
-                      <li><a href="#">Adidas </a></li>
-                      <li><a href="#">Puma</a></li>
-                      <li><a href="#">ASICS </a></li>
-                    </ul>
+   <div className="top-brands">
+  <div className="container">
+    <h2>Top selling offers</h2>
+    <div className="grid_3 grid_5">
+      <div className="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+        <ul id="myTab" className="nav nav-tabs" role="tablist">
+          <li role="presentation" className="active"><a href="#expeditions" id="expeditions-tab" role="tab" data-toggle="tab" aria-controls="expeditions" aria-expanded="true">Advertised offers</a></li>
+          <li role="presentation"><a href="#tours" role="tab" id="tours-tab" data-toggle="tab" aria-controls="tours">Today Offers</a></li>
+        </ul>
+        <div id="myTabContent" className="tab-content">
+          <div role="tabpanel" className="tab-pane fade in active" id="expeditions" aria-labelledby="expeditions-tab">
+            <div className="agile-tp">
+              <h5>Advertised this week</h5>
+              <p className="w3l-ad">We've pulled together all our advertised offers into one place, so you won't miss out on a great deal.</p>
+            </div>
+            <div className="agile_top_brands_grids">
+              <div className="col-md-4 top_brand_left">
+                <div className="hover14 column">
+                  <div className="agile_top_brand_left_grid">
+                    <div className="agile_top_brand_left_grid_pos">
+                      <img src="images/offer.png" alt=" " className="img-responsive" />
+                    </div>
+                    <div className="agile_top_brand_left_grid1">
+                      <figure>
+                        <div className="snipcart-item block">
+                          <div className="snipcart-thumb">
+                            <a href="products.html"><img title=" " alt=" " src="images/1.png" /></a>		
+                            <p>Tata-salt</p>
+                            <div className="stars">
+                              <i className="fa fa-star blue-star" aria-hidden="true" />
+                              <i className="fa fa-star blue-star" aria-hidden="true" />
+                              <i className="fa fa-star blue-star" aria-hidden="true" />
+                              <i className="fa fa-star blue-star" aria-hidden="true" />
+                              <i className="fa fa-star gray-star" aria-hidden="true" />
+                            </div>
+                            <h4>$20.99 <span>$35.00</span></h4>
+                          </div>
+                          <div className="snipcart-details top_brand_home_details">
+                            <form action="#" method="post">
+                              <fieldset>
+                                <input type="hidden" name="cmd" defaultValue="_cart" />
+                                <input type="hidden" name="add" defaultValue={1} />
+                                <input type="hidden" name="business" defaultValue=" " />
+                                <input type="hidden" name="item_name" defaultValue="Fortune Sunflower Oil" />
+                                <input type="hidden" name="amount" defaultValue="20.99" />
+                                <input type="hidden" name="discount_amount" defaultValue={1.00} />
+                                <input type="hidden" name="currency_code" defaultValue="USD" />
+                                <input type="hidden" name="return" defaultValue=" " />
+                                <input type="hidden" name="cancel_return" defaultValue=" " />
+                                <input type="submit" name="submit" defaultValue="Add to cart" className="button" />
+                              </fieldset>
+                            </form>
+                          </div>
+                        </div>
+                      </figure>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div className="panel panel-default">
-                <div className="panel-heading">
-                  <h4 className="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordian" href="#mens">
-                      <span className="badge pull-right"><i className="fa fa-plus" /></span>
-                      Mens
-                    </a>
-                  </h4>
-                </div>
-                <div id="mens" className="panel-collapse collapse">
-                  <div className="panel-body">
-                    <ul>
-                      <li><a href="#">Fendi</a></li>
-                      <li><a href="#">Guess</a></li>
-                      <li><a href="#">Valentino</a></li>
-                      <li><a href="#">Dior</a></li>
-                      <li><a href="#">Versace</a></li>
-                      <li><a href="#">Armani</a></li>
-                      <li><a href="#">Prada</a></li>
-                      <li><a href="#">Dolce and Gabbana</a></li>
-                      <li><a href="#">Chanel</a></li>
-                      <li><a href="#">Gucci</a></li>
-                    </ul>
+              <div className="col-md-4 top_brand_left">
+                <div className="hover14 column">
+                  <div className="agile_top_brand_left_grid">
+                    <div className="agile_top_brand_left_grid_pos">
+                      <img src="images/offer.png" alt=" " className="img-responsive" />
+                    </div>
+                    <div className="agile_top_brand_left_grid1">
+                      <figure>
+                        <div className="snipcart-item block">
+                          <div className="snipcart-thumb">
+                            <a href="products.html"><img title=" " alt=" " src="images/2.png" /></a>		
+                            <p>Fortune-sunflower</p>
+                            <div className="stars">
+                              <i className="fa fa-star blue-star" aria-hidden="true" />
+                              <i className="fa fa-star blue-star" aria-hidden="true" />
+                              <i className="fa fa-star blue-star" aria-hidden="true" />
+                              <i className="fa fa-star blue-star" aria-hidden="true" />
+                              <i className="fa fa-star gray-star" aria-hidden="true" />
+                            </div>
+                            <h4>$20.99 <span>$35.00</span></h4>
+                          </div>
+                          <div className="snipcart-details top_brand_home_details">
+                            <form action="#" method="post">
+                              <fieldset>
+                                <input type="hidden" name="cmd" defaultValue="_cart" />
+                                <input type="hidden" name="add" defaultValue={1} />
+                                <input type="hidden" name="business" defaultValue=" " />
+                                <input type="hidden" name="item_name" defaultValue="basmati rise" />
+                                <input type="hidden" name="amount" defaultValue="20.99" />
+                                <input type="hidden" name="discount_amount" defaultValue={1.00} />
+                                <input type="hidden" name="currency_code" defaultValue="USD" />
+                                <input type="hidden" name="return" defaultValue=" " />
+                                <input type="hidden" name="cancel_return" defaultValue=" " />
+                                <input type="submit" name="submit" defaultValue="Add to cart" className="button" />
+                              </fieldset>
+                            </form>
+                          </div>
+                        </div>
+                      </figure>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div className="panel panel-default">
-                <div className="panel-heading">
-                  <h4 className="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordian" href="#womens">
-                      <span className="badge pull-right"><i className="fa fa-plus" /></span>
-                      Womens
-                    </a>
-                  </h4>
-                </div>
-                <div id="womens" className="panel-collapse collapse">
-                  <div className="panel-body">
-                    <ul>
-                      <li><a href="#">Fendi</a></li>
-                      <li><a href="#">Guess</a></li>
-                      <li><a href="#">Valentino</a></li>
-                      <li><a href="#">Dior</a></li>
-                      <li><a href="#">Versace</a></li>
-                    </ul>
+              <div className="col-md-4 top_brand_left">
+                <div className="hover14 column">
+                  <div className="agile_top_brand_left_grid">
+                    <div className="agile_top_brand_left_grid_pos">
+                      <img src="images/offer.png" alt=" " className="img-responsive" />
+                    </div>
+                    <div className="agile_top_brand_left_grid1">
+                      <figure>
+                        <div className="snipcart-item block">
+                          <div className="snipcart-thumb">
+                            <a href="products.html"><img src="images/3.png" alt=" " className="img-responsive" /></a>
+                            <p>Aashirvaad-atta</p>
+                            <div className="stars">
+                              <i className="fa fa-star blue-star" aria-hidden="true" />
+                              <i className="fa fa-star blue-star" aria-hidden="true" />
+                              <i className="fa fa-star blue-star" aria-hidden="true" />
+                              <i className="fa fa-star blue-star" aria-hidden="true" />
+                              <i className="fa fa-star gray-star" aria-hidden="true" />
+                            </div>
+                            <h4>$40.99 <span>$65.00</span></h4>
+                          </div>
+                          <div className="snipcart-details top_brand_home_details">
+                            <form action="#" method="post">
+                              <fieldset>
+                                <input type="hidden" name="cmd" defaultValue="_cart" />
+                                <input type="hidden" name="add" defaultValue={1} />
+                                <input type="hidden" name="business" defaultValue=" " />
+                                <input type="hidden" name="item_name" defaultValue="Pepsi soft drink" />
+                                <input type="hidden" name="amount" defaultValue={40.00} />
+                                <input type="hidden" name="discount_amount" defaultValue={1.00} />
+                                <input type="hidden" name="currency_code" defaultValue="USD" />
+                                <input type="hidden" name="return" defaultValue=" " />
+                                <input type="hidden" name="cancel_return" defaultValue=" " />
+                                <input type="submit" name="submit" defaultValue="Add to cart" className="button" />
+                              </fieldset>
+                            </form>
+                          </div>
+                        </div>
+                      </figure>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div className="panel panel-default">
-                <div className="panel-heading">
-                  <h4 className="panel-title"><a href="#">Kids</a></h4>
+              <div className="clearfix"> </div>
+            </div>
+            <div className="agile_top_brands_grids">
+              <div className="col-md-4 top_brand_left">
+                <div className="hover14 column">
+                  <div className="agile_top_brand_left_grid">
+                    <div className="agile_top_brand_left_grid_pos">
+                      <img src="images/offer.png" alt=" " className="img-responsive" />
+                    </div>
+                    <div className="agile_top_brand_left_grid1">
+                      <figure>
+                        <div className="snipcart-item block">
+                          <div className="snipcart-thumb">
+                            <a href="products.html"><img title=" " alt=" " src="images/4.png" /></a>		
+                            <p>Sampann-toor-dal</p>
+                            <div className="stars">
+                              <i className="fa fa-star blue-star" aria-hidden="true" />
+                              <i className="fa fa-star blue-star" aria-hidden="true" />
+                              <i className="fa fa-star blue-star" aria-hidden="true" />
+                              <i className="fa fa-star blue-star" aria-hidden="true" />
+                              <i className="fa fa-star gray-star" aria-hidden="true" />
+                            </div>
+                            <h4>$35.99 <span>$55.00</span></h4>
+                          </div>
+                          <div className="snipcart-details top_brand_home_details">
+                            <form action="#" method="post">
+                              <fieldset>
+                                <input type="hidden" name="cmd" defaultValue="_cart" />
+                                <input type="hidden" name="add" defaultValue={1} />
+                                <input type="hidden" name="business" defaultValue=" " />
+                                <input type="hidden" name="item_name" defaultValue="Fortune Sunflower Oil" />
+                                <input type="hidden" name="amount" defaultValue="35.99" />
+                                <input type="hidden" name="discount_amount" defaultValue={1.00} />
+                                <input type="hidden" name="currency_code" defaultValue="USD" />
+                                <input type="hidden" name="return" defaultValue=" " />
+                                <input type="hidden" name="cancel_return" defaultValue=" " />
+                                <input type="submit" name="submit" defaultValue="Add to cart" className="button" />
+                              </fieldset>
+                            </form>
+                          </div>
+                        </div>
+                      </figure>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div className="panel panel-default">
-                <div className="panel-heading">
-                  <h4 className="panel-title"><a href="#">Fashion</a></h4>
+              <div className="col-md-4 top_brand_left">
+                <div className="hover14 column">
+                  <div className="agile_top_brand_left_grid">
+                    <div className="agile_top_brand_left_grid_pos">
+                      <img src="images/offer.png" alt=" " className="img-responsive" />
+                    </div>
+                    <div className="agile_top_brand_left_grid1">
+                      <figure>
+                        <div className="snipcart-item block">
+                          <div className="snipcart-thumb">
+                            <a href="products.html"><img title=" " alt=" " src="images/5.png" /></a>		
+                            <p>Parryss-sugar</p>
+                            <div className="stars">
+                              <i className="fa fa-star blue-star" aria-hidden="true" />
+                              <i className="fa fa-star blue-star" aria-hidden="true" />
+                              <i className="fa fa-star blue-star" aria-hidden="true" />
+                              <i className="fa fa-star blue-star" aria-hidden="true" />
+                              <i className="fa fa-star gray-star" aria-hidden="true" />
+                            </div>
+                            <h4>$30.99 <span>$45.00</span></h4>
+                          </div>
+                          <div className="snipcart-details top_brand_home_details">
+                            <form action="#" method="post">
+                              <fieldset>
+                                <input type="hidden" name="cmd" defaultValue="_cart" />
+                                <input type="hidden" name="add" defaultValue={1} />
+                                <input type="hidden" name="business" defaultValue=" " />
+                                <input type="hidden" name="item_name" defaultValue="basmati rise" />
+                                <input type="hidden" name="amount" defaultValue="30.99" />
+                                <input type="hidden" name="discount_amount" defaultValue={1.00} />
+                                <input type="hidden" name="currency_code" defaultValue="USD" />
+                                <input type="hidden" name="return" defaultValue=" " />
+                                <input type="hidden" name="cancel_return" defaultValue=" " />
+                                <input type="submit" name="submit" defaultValue="Add to cart" className="button" />
+                              </fieldset>
+                            </form>
+                          </div>
+                        </div>
+                      </figure>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div className="panel panel-default">
-                <div className="panel-heading">
-                  <h4 className="panel-title"><a href="#">Households</a></h4>
+              <div className="col-md-4 top_brand_left">
+                <div className="hover14 column">
+                  <div className="agile_top_brand_left_grid">
+                    <div className="agile_top_brand_left_grid_pos">
+                      <img src="images/offer.png" alt=" " className="img-responsive" />
+                    </div>
+                    <div className="agile_top_brand_left_grid_pos">
+                      <img src="images/offer.png" alt=" " className="img-responsive" />
+                    </div>
+                    <div className="agile_top_brand_left_grid1">
+                      <figure>
+                        <div className="snipcart-item block">
+                          <div className="snipcart-thumb">
+                            <a href="products.html"><img src="images/6.png" alt=" " className="img-responsive" /></a>
+                            <p>Saffola-gold</p>
+                            <div className="stars">
+                              <i className="fa fa-star blue-star" aria-hidden="true" />
+                              <i className="fa fa-star blue-star" aria-hidden="true" />
+                              <i className="fa fa-star blue-star" aria-hidden="true" />
+                              <i className="fa fa-star blue-star" aria-hidden="true" />
+                              <i className="fa fa-star gray-star" aria-hidden="true" />
+                            </div>
+                            <h4>$80.99 <span>$105.00</span></h4>
+                          </div>
+                          <div className="snipcart-details top_brand_home_details">
+                            <form action="#" method="post">
+                              <fieldset>
+                                <input type="hidden" name="cmd" defaultValue="_cart" />
+                                <input type="hidden" name="add" defaultValue={1} />
+                                <input type="hidden" name="business" defaultValue=" " />
+                                <input type="hidden" name="item_name" defaultValue="Pepsi soft drink" />
+                                <input type="hidden" name="amount" defaultValue={80.00} />
+                                <input type="hidden" name="discount_amount" defaultValue={1.00} />
+                                <input type="hidden" name="currency_code" defaultValue="USD" />
+                                <input type="hidden" name="return" defaultValue=" " />
+                                <input type="hidden" name="cancel_return" defaultValue=" " />
+                                <input type="submit" name="submit" defaultValue="Add to cart" className="button" />
+                              </fieldset>
+                            </form>
+                          </div>
+                        </div>
+                      </figure>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div className="panel panel-default">
-                <div className="panel-heading">
-                  <h4 className="panel-title"><a href="#">Interiors</a></h4>
-                </div>
-              </div>
-              <div className="panel panel-default">
-                <div className="panel-heading">
-                  <h4 className="panel-title"><a href="#">Clothing</a></h4>
-                </div>
-              </div>
-              <div className="panel panel-default">
-                <div className="panel-heading">
-                  <h4 className="panel-title"><a href="#">Bags</a></h4>
-                </div>
-              </div>
-              <div className="panel panel-default">
-                <div className="panel-heading">
-                  <h4 className="panel-title"><a href="#">Shoes</a></h4>
-                </div>
-              </div>
-            </div>{/*/category-products*/}
-            <div className="brands_products">{/*brands_products*/}
-              <h2>Brands</h2>
-              <div className="brands-name">
-                <ul className="nav nav-pills nav-stacked">
-                  <li><a href="#"> <span className="pull-right">(50)</span>Acne</a></li>
-                  <li><a href="#"> <span className="pull-right">(56)</span>Grüne Erde</a></li>
-                  <li><a href="#"> <span className="pull-right">(27)</span>Albiro</a></li>
-                  <li><a href="#"> <span className="pull-right">(32)</span>Ronhill</a></li>
-                  <li><a href="#"> <span className="pull-right">(5)</span>Oddmolly</a></li>
-                  <li><a href="#"> <span className="pull-right">(9)</span>Boudestijn</a></li>
-                  <li><a href="#"> <span className="pull-right">(4)</span>Rösch creative culture</a></li>
-                </ul>
-              </div>
-            </div>{/*/brands_products*/}
-            <div className="price-range">{/*price-range*/}
-              <h2>Price Range</h2>
-              <div className="well text-center">
-                <input type="text" className="span2" defaultValue data-slider-min={0} data-slider-max={600} data-slider-step={5} data-slider-value="[250,450]" id="sl2" /><br />
-                <b className="pull-left">$ 0</b> <b className="pull-right">$ 600</b>
-              </div>
-            </div>{/*/price-range*/}
-            <div className="shipping text-center">{/*shipping*/}
-              <img src="images/home/shipping.jpg" alt />
-            </div>{/*/shipping*/}
+              <div className="clearfix"> </div>
+            </div>
           </div>
-        </div>
-        <div className="col-sm-9 padding-right">
-          <div className="features_items">{/*features_items*/}
-            <h2 className="title text-center">Features Items</h2>
-            <div className="col-sm-4">
-              <div className="product-image-wrapper">
-                <div className="single-products">
-                  <div className="productinfo text-center">
-                    <img src="images/home/product1.jpg" alt />
-                    <h2>$56</h2>
-                    <p>Easy Polo Black Edition</p>
-                    <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
-                  </div>
-                  <div className="product-overlay">
-                    <div className="overlay-content">
-                      <h2>$56</h2>
-                      <p>Easy Polo Black Edition</p>
-                      <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
-                    </div>
-                  </div>
-                </div>
-                <div className="choose">
-                  <ul className="nav nav-pills nav-justified">
-                    <li><a href="#"><i className="fa fa-plus-square" />Add to wishlist</a></li>
-                    <li><a href="#"><i className="fa fa-plus-square" />Add to compare</a></li>
-                  </ul>
-                </div>
-              </div>
+          <div role="tabpanel" className="tab-pane fade" id="tours" aria-labelledby="tours-tab">
+            <div className="agile-tp">
+              <h5>This week</h5>
+              <p className="w3l-ad">We've pulled together all our advertised offers into one place, so you won't miss out on a great deal.</p>
             </div>
-            <div className="col-sm-4">
-              <div className="product-image-wrapper">
-                <div className="single-products">
-                  <div className="productinfo text-center">
-                    <img src="images/home/product2.jpg" alt />
-                    <h2>$56</h2>
-                    <p>Easy Polo Black Edition</p>
-                    <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
-                  </div>
-                  <div className="product-overlay">
-                    <div className="overlay-content">
-                      <h2>$56</h2>
-                      <p>Easy Polo Black Edition</p>
-                      <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
+            <div className="agile_top_brands_grids">
+              <div className="col-md-4 top_brand_left">
+                <div className="hover14 column">
+                  <div className="agile_top_brand_left_grid">
+                    <div className="agile_top_brand_left_grid_pos">
+                      <img src="images/offer.png" alt=" " className="img-responsive" />
                     </div>
-                  </div>
-                </div>
-                <div className="choose">
-                  <ul className="nav nav-pills nav-justified">
-                    <li><a href="#"><i className="fa fa-plus-square" />Add to wishlist</a></li>
-                    <li><a href="#"><i className="fa fa-plus-square" />Add to compare</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-4">
-              <div className="product-image-wrapper">
-                <div className="single-products">
-                  <div className="productinfo text-center">
-                    <img src="images/home/product3.jpg" alt />
-                    <h2>$56</h2>
-                    <p>Easy Polo Black Edition</p>
-                    <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
-                  </div>
-                  <div className="product-overlay">
-                    <div className="overlay-content">
-                      <h2>$56</h2>
-                      <p>Easy Polo Black Edition</p>
-                      <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
-                    </div>
-                  </div>
-                </div>
-                <div className="choose">
-                  <ul className="nav nav-pills nav-justified">
-                    <li><a href="#"><i className="fa fa-plus-square" />Add to wishlist</a></li>
-                    <li><a href="#"><i className="fa fa-plus-square" />Add to compare</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-4">
-              <div className="product-image-wrapper">
-                <div className="single-products">
-                  <div className="productinfo text-center">
-                    <img src="images/home/product4.jpg" alt />
-                    <h2>$56</h2>
-                    <p>Easy Polo Black Edition</p>
-                    <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
-                  </div>
-                  <div className="product-overlay">
-                    <div className="overlay-content">
-                      <h2>$56</h2>
-                      <p>Easy Polo Black Edition</p>
-                      <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
-                    </div>
-                  </div>
-                  <img src="images/home/new.png" className="new" alt />
-                </div>
-                <div className="choose">
-                  <ul className="nav nav-pills nav-justified">
-                    <li><a href="#"><i className="fa fa-plus-square" />Add to wishlist</a></li>
-                    <li><a href="#"><i className="fa fa-plus-square" />Add to compare</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-4">
-              <div className="product-image-wrapper">
-                <div className="single-products">
-                  <div className="productinfo text-center">
-                    <img src="images/home/product5.jpg" alt />
-                    <h2>$56</h2>
-                    <p>Easy Polo Black Edition</p>
-                    <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
-                  </div>
-                  <div className="product-overlay">
-                    <div className="overlay-content">
-                      <h2>$56</h2>
-                      <p>Easy Polo Black Edition</p>
-                      <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
-                    </div>
-                  </div>
-                  <img src="images/home/sale.png" className="new" alt />
-                </div>
-                <div className="choose">
-                  <ul className="nav nav-pills nav-justified">
-                    <li><a href="#"><i className="fa fa-plus-square" />Add to wishlist</a></li>
-                    <li><a href="#"><i className="fa fa-plus-square" />Add to compare</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-4">
-              <div className="product-image-wrapper">
-                <div className="single-products">
-                  <div className="productinfo text-center">
-                    <img src="images/home/product6.jpg" alt />
-                    <h2>$56</h2>
-                    <p>Easy Polo Black Edition</p>
-                    <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
-                  </div>
-                  <div className="product-overlay">
-                    <div className="overlay-content">
-                      <h2>$56</h2>
-                      <p>Easy Polo Black Edition</p>
-                      <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
-                    </div>
-                  </div>
-                </div>
-                <div className="choose">
-                  <ul className="nav nav-pills nav-justified">
-                    <li><a href="#"><i className="fa fa-plus-square" />Add to wishlist</a></li>
-                    <li><a href="#"><i className="fa fa-plus-square" />Add to compare</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>{/*features_items*/}
-          <div className="category-tab">{/*category-tab*/}
-            <div className="col-sm-12">
-              <ul className="nav nav-tabs">
-                <li className="active"><a href="#tshirt" data-toggle="tab">T-Shirt</a></li>
-                <li><a href="#blazers" data-toggle="tab">Blazers</a></li>
-                <li><a href="#sunglass" data-toggle="tab">Sunglass</a></li>
-                <li><a href="#kids" data-toggle="tab">Kids</a></li>
-                <li><a href="#poloshirt" data-toggle="tab">Polo shirt</a></li>
-              </ul>
-            </div>
-            <div className="tab-content">
-              <div className="tab-pane fade active in" id="tshirt">
-                <div className="col-sm-3">
-                  <div className="product-image-wrapper">
-                    <div className="single-products">
-                      <div className="productinfo text-center">
-                        <img src="images/home/gallery1.jpg" alt />
-                        <h2>$56</h2>
-                        <p>Easy Polo Black Edition</p>
-                        <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-sm-3">
-                  <div className="product-image-wrapper">
-                    <div className="single-products">
-                      <div className="productinfo text-center">
-                        <img src="images/home/gallery2.jpg" alt />
-                        <h2>$56</h2>
-                        <p>Easy Polo Black Edition</p>
-                        <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-sm-3">
-                  <div className="product-image-wrapper">
-                    <div className="single-products">
-                      <div className="productinfo text-center">
-                        <img src="images/home/gallery3.jpg" alt />
-                        <h2>$56</h2>
-                        <p>Easy Polo Black Edition</p>
-                        <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-sm-3">
-                  <div className="product-image-wrapper">
-                    <div className="single-products">
-                      <div className="productinfo text-center">
-                        <img src="images/home/gallery4.jpg" alt />
-                        <h2>$56</h2>
-                        <p>Easy Polo Black Edition</p>
-                        <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="tab-pane fade" id="blazers">
-                <div className="col-sm-3">
-                  <div className="product-image-wrapper">
-                    <div className="single-products">
-                      <div className="productinfo text-center">
-                        <img src="images/home/gallery4.jpg" alt />
-                        <h2>$56</h2>
-                        <p>Easy Polo Black Edition</p>
-                        <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-sm-3">
-                  <div className="product-image-wrapper">
-                    <div className="single-products">
-                      <div className="productinfo text-center">
-                        <img src="images/home/gallery3.jpg" alt />
-                        <h2>$56</h2>
-                        <p>Easy Polo Black Edition</p>
-                        <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-sm-3">
-                  <div className="product-image-wrapper">
-                    <div className="single-products">
-                      <div className="productinfo text-center">
-                        <img src="images/home/gallery2.jpg" alt />
-                        <h2>$56</h2>
-                        <p>Easy Polo Black Edition</p>
-                        <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-sm-3">
-                  <div className="product-image-wrapper">
-                    <div className="single-products">
-                      <div className="productinfo text-center">
-                        <img src="images/home/gallery1.jpg" alt />
-                        <h2>$56</h2>
-                        <p>Easy Polo Black Edition</p>
-                        <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="tab-pane fade" id="sunglass">
-                <div className="col-sm-3">
-                  <div className="product-image-wrapper">
-                    <div className="single-products">
-                      <div className="productinfo text-center">
-                        <img src="images/home/gallery3.jpg" alt />
-                        <h2>$56</h2>
-                        <p>Easy Polo Black Edition</p>
-                        <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-sm-3">
-                  <div className="product-image-wrapper">
-                    <div className="single-products">
-                      <div className="productinfo text-center">
-                        <img src="images/home/gallery4.jpg" alt />
-                        <h2>$56</h2>
-                        <p>Easy Polo Black Edition</p>
-                        <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-sm-3">
-                  <div className="product-image-wrapper">
-                    <div className="single-products">
-                      <div className="productinfo text-center">
-                        <img src="images/home/gallery1.jpg" alt />
-                        <h2>$56</h2>
-                        <p>Easy Polo Black Edition</p>
-                        <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-sm-3">
-                  <div className="product-image-wrapper">
-                    <div className="single-products">
-                      <div className="productinfo text-center">
-                        <img src="images/home/gallery2.jpg" alt />
-                        <h2>$56</h2>
-                        <p>Easy Polo Black Edition</p>
-                        <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="tab-pane fade" id="kids">
-                <div className="col-sm-3">
-                  <div className="product-image-wrapper">
-                    <div className="single-products">
-                      <div className="productinfo text-center">
-                        <img src="images/home/gallery1.jpg" alt />
-                        <h2>$56</h2>
-                        <p>Easy Polo Black Edition</p>
-                        <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-sm-3">
-                  <div className="product-image-wrapper">
-                    <div className="single-products">
-                      <div className="productinfo text-center">
-                        <img src="images/home/gallery2.jpg" alt />
-                        <h2>$56</h2>
-                        <p>Easy Polo Black Edition</p>
-                        <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-sm-3">
-                  <div className="product-image-wrapper">
-                    <div className="single-products">
-                      <div className="productinfo text-center">
-                        <img src="images/home/gallery3.jpg" alt />
-                        <h2>$56</h2>
-                        <p>Easy Polo Black Edition</p>
-                        <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-sm-3">
-                  <div className="product-image-wrapper">
-                    <div className="single-products">
-                      <div className="productinfo text-center">
-                        <img src="images/home/gallery4.jpg" alt />
-                        <h2>$56</h2>
-                        <p>Easy Polo Black Edition</p>
-                        <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="tab-pane fade" id="poloshirt">
-                <div className="col-sm-3">
-                  <div className="product-image-wrapper">
-                    <div className="single-products">
-                      <div className="productinfo text-center">
-                        <img src="images/home/gallery2.jpg" alt />
-                        <h2>$56</h2>
-                        <p>Easy Polo Black Edition</p>
-                        <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-sm-3">
-                  <div className="product-image-wrapper">
-                    <div className="single-products">
-                      <div className="productinfo text-center">
-                        <img src="images/home/gallery4.jpg" alt />
-                        <h2>$56</h2>
-                        <p>Easy Polo Black Edition</p>
-                        <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-sm-3">
-                  <div className="product-image-wrapper">
-                    <div className="single-products">
-                      <div className="productinfo text-center">
-                        <img src="images/home/gallery3.jpg" alt />
-                        <h2>$56</h2>
-                        <p>Easy Polo Black Edition</p>
-                        <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-sm-3">
-                  <div className="product-image-wrapper">
-                    <div className="single-products">
-                      <div className="productinfo text-center">
-                        <img src="images/home/gallery1.jpg" alt />
-                        <h2>$56</h2>
-                        <p>Easy Polo Black Edition</p>
-                        <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>{/*/category-tab*/}
-          <div className="recommended_items">{/*recommended_items*/}
-            <h2 className="title text-center">recommended items</h2>
-            <div id="recommended-item-carousel" className="carousel slide" data-ride="carousel">
-              <div className="carousel-inner">
-                <div className="item active">	
-                  <div className="col-sm-4">
-                    <div className="product-image-wrapper">
-                      <div className="single-products">
-                        <div className="productinfo text-center">
-                          <img src="images/home/recommend1.jpg" alt />
-                          <h2>$56</h2>
-                          <p>Easy Polo Black Edition</p>
-                          <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
+                    <div className="agile_top_brand_left_grid1">
+                      <figure>
+                        <div className="snipcart-item block">
+                          <div className="snipcart-thumb">
+                            <a href="products.html"><img title=" " alt=" " src="images/7.png" /></a>		
+                            <p>Sona-masoori-rice</p>
+                            <div className="stars">
+                              <i className="fa fa-star blue-star" aria-hidden="true" />
+                              <i className="fa fa-star blue-star" aria-hidden="true" />
+                              <i className="fa fa-star blue-star" aria-hidden="true" />
+                              <i className="fa fa-star blue-star" aria-hidden="true" />
+                              <i className="fa fa-star gray-star" aria-hidden="true" />
+                            </div>
+                            <h4>$35.99 <span>$55.00</span></h4>
+                          </div>
+                          <div className="snipcart-details top_brand_home_details">
+                            <form action="#" method="post">
+                              <fieldset>
+                                <input type="hidden" name="cmd" defaultValue="_cart" />
+                                <input type="hidden" name="add" defaultValue={1} />
+                                <input type="hidden" name="business" defaultValue=" " />
+                                <input type="hidden" name="item_name" defaultValue="Fortune Sunflower Oil" />
+                                <input type="hidden" name="amount" defaultValue="35.99" />
+                                <input type="hidden" name="discount_amount" defaultValue={1.00} />
+                                <input type="hidden" name="currency_code" defaultValue="USD" />
+                                <input type="hidden" name="return" defaultValue=" " />
+                                <input type="hidden" name="cancel_return" defaultValue=" " />
+                                <input type="submit" name="submit" defaultValue="Add to cart" className="button" />
+                              </fieldset>
+                            </form>
+                          </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-sm-4">
-                    <div className="product-image-wrapper">
-                      <div className="single-products">
-                        <div className="productinfo text-center">
-                          <img src="images/home/recommend2.jpg" alt />
-                          <h2>$56</h2>
-                          <p>Easy Polo Black Edition</p>
-                          <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-sm-4">
-                    <div className="product-image-wrapper">
-                      <div className="single-products">
-                        <div className="productinfo text-center">
-                          <img src="images/home/recommend3.jpg" alt />
-                          <h2>$56</h2>
-                          <p>Easy Polo Black Edition</p>
-                          <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="item">	
-                  <div className="col-sm-4">
-                    <div className="product-image-wrapper">
-                      <div className="single-products">
-                        <div className="productinfo text-center">
-                          <img src="images/home/recommend1.jpg" alt />
-                          <h2>$56</h2>
-                          <p>Easy Polo Black Edition</p>
-                          <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-sm-4">
-                    <div className="product-image-wrapper">
-                      <div className="single-products">
-                        <div className="productinfo text-center">
-                          <img src="images/home/recommend2.jpg" alt />
-                          <h2>$56</h2>
-                          <p>Easy Polo Black Edition</p>
-                          <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-sm-4">
-                    <div className="product-image-wrapper">
-                      <div className="single-products">
-                        <div className="productinfo text-center">
-                          <img src="images/home/recommend3.jpg" alt />
-                          <h2>$56</h2>
-                          <p>Easy Polo Black Edition</p>
-                          <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
-                        </div>
-                      </div>
+                      </figure>
                     </div>
                   </div>
                 </div>
               </div>
-              <a className="left recommended-item-control" href="#recommended-item-carousel" data-slide="prev">
-                <i className="fa fa-angle-left" />
-              </a>
-              <a className="right recommended-item-control" href="#recommended-item-carousel" data-slide="next">
-                <i className="fa fa-angle-right" />
-              </a>			
+              <div className="col-md-4 top_brand_left">
+                <div className="hover14 column">
+                  <div className="agile_top_brand_left_grid">
+                    <div className="agile_top_brand_left_grid_pos">
+                      <img src="images/offer.png" alt=" " className="img-responsive" />
+                    </div>
+                    <div className="agile_top_brand_left_grid1">
+                      <figure>
+                        <div className="snipcart-item block">
+                          <div className="snipcart-thumb">
+                            <a href="products.html"><img title=" " alt=" " src="images/8.png" /></a>		
+                            <p>Milky-mist-paneer</p>
+                            <div className="stars">
+                              <i className="fa fa-star blue-star" aria-hidden="true" />
+                              <i className="fa fa-star blue-star" aria-hidden="true" />
+                              <i className="fa fa-star blue-star" aria-hidden="true" />
+                              <i className="fa fa-star blue-star" aria-hidden="true" />
+                              <i className="fa fa-star gray-star" aria-hidden="true" />
+                            </div>
+                            <h4>$30.99 <span>$45.00</span></h4>
+                          </div>
+                          <div className="snipcart-details top_brand_home_details">
+                            <form action="#" method="post">
+                              <fieldset>
+                                <input type="hidden" name="cmd" defaultValue="_cart" />
+                                <input type="hidden" name="add" defaultValue={1} />
+                                <input type="hidden" name="business" defaultValue=" " />
+                                <input type="hidden" name="item_name" defaultValue="basmati rise" />
+                                <input type="hidden" name="amount" defaultValue="30.99" />
+                                <input type="hidden" name="discount_amount" defaultValue={1.00} />
+                                <input type="hidden" name="currency_code" defaultValue="USD" />
+                                <input type="hidden" name="return" defaultValue=" " />
+                                <input type="hidden" name="cancel_return" defaultValue=" " />
+                                <input type="submit" name="submit" defaultValue="Add to cart" className="button" />
+                              </fieldset>
+                            </form>
+                          </div>
+                        </div>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-4 top_brand_left">
+                <div className="hover14 column">
+                  <div className="agile_top_brand_left_grid">
+                    <div className="agile_top_brand_left_grid_pos">
+                      <img src="images/offer.png" alt=" " className="img-responsive" />
+                    </div>
+                    <div className="agile_top_brand_left_grid_pos">
+                      <img src="images/offer.png" alt=" " className="img-responsive" />
+                    </div>
+                    <div className="agile_top_brand_left_grid1">
+                      <figure>
+                        <div className="snipcart-item block">
+                          <div className="snipcart-thumb">
+                            <a href="products.html"><img src="images/9.png" alt=" " className="img-responsive" /></a>
+                            <p>Basmati-Rice</p>
+                            <div className="stars">
+                              <i className="fa fa-star blue-star" aria-hidden="true" />
+                              <i className="fa fa-star blue-star" aria-hidden="true" />
+                              <i className="fa fa-star blue-star" aria-hidden="true" />
+                              <i className="fa fa-star blue-star" aria-hidden="true" />
+                              <i className="fa fa-star gray-star" aria-hidden="true" />
+                            </div>
+                            <h4>$80.99 <span>$105.00</span></h4>
+                          </div>
+                          <div className="snipcart-details top_brand_home_details">
+                            <form action="#" method="post">
+                              <fieldset>
+                                <input type="hidden" name="cmd" defaultValue="_cart" />
+                                <input type="hidden" name="add" defaultValue={1} />
+                                <input type="hidden" name="business" defaultValue=" " />
+                                <input type="hidden" name="item_name" defaultValue="Pepsi soft drink" />
+                                <input type="hidden" name="amount" defaultValue={80.00} />
+                                <input type="hidden" name="discount_amount" defaultValue={1.00} />
+                                <input type="hidden" name="currency_code" defaultValue="USD" />
+                                <input type="hidden" name="return" defaultValue=" " />
+                                <input type="hidden" name="cancel_return" defaultValue=" " />
+                                <input type="submit" name="submit" defaultValue="Add to cart" className="button" />
+                              </fieldset>
+                            </form>
+                          </div>
+                        </div>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="clearfix"> </div>
             </div>
-          </div>{/*/recommended_items*/}
+            <div className="agile_top_brands_grids">
+              <div className="col-md-4 top_brand_left">
+                <div className="hover14 column">
+                  <div className="agile_top_brand_left_grid">
+                    <div className="agile_top_brand_left_grid_pos">
+                      <img src="images/offer.png" alt=" " className="img-responsive" />
+                    </div>
+                    <div className="agile_top_brand_left_grid1">
+                      <figure>
+                        <div className="snipcart-item block">
+                          <div className="snipcart-thumb">
+                            <a href="products.html"><img title=" " alt=" " src="images/10.png" /></a>		
+                            <p>Fortune-sunflower</p>
+                            <div className="stars">
+                              <i className="fa fa-star blue-star" aria-hidden="true" />
+                              <i className="fa fa-star blue-star" aria-hidden="true" />
+                              <i className="fa fa-star blue-star" aria-hidden="true" />
+                              <i className="fa fa-star blue-star" aria-hidden="true" />
+                              <i className="fa fa-star gray-star" aria-hidden="true" />
+                            </div>
+                            <h4>$20.99 <span>$35.00</span></h4>
+                          </div>
+                          <div className="snipcart-details top_brand_home_details">
+                            <form action="#" method="post">
+                              <fieldset>
+                                <input type="hidden" name="cmd" defaultValue="_cart" />
+                                <input type="hidden" name="add" defaultValue={1} />
+                                <input type="hidden" name="business" defaultValue=" " />
+                                <input type="hidden" name="item_name" defaultValue="Fortune Sunflower Oil" />
+                                <input type="hidden" name="amount" defaultValue="20.99" />
+                                <input type="hidden" name="discount_amount" defaultValue={1.00} />
+                                <input type="hidden" name="currency_code" defaultValue="USD" />
+                                <input type="hidden" name="return" defaultValue=" " />
+                                <input type="hidden" name="cancel_return" defaultValue=" " />
+                                <input type="submit" name="submit" defaultValue="Add to cart" className="button" />
+                              </fieldset>
+                            </form>
+                          </div>
+                        </div>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-4 top_brand_left">
+                <div className="hover14 column">
+                  <div className="agile_top_brand_left_grid">
+                    <div className="agile_top_brand_left_grid_pos">
+                      <img src="images/offer.png" alt=" " className="img-responsive" />
+                    </div>
+                    <div className="agile_top_brand_left_grid1">
+                      <figure>
+                        <div className="snipcart-item block">
+                          <div className="snipcart-thumb">
+                            <a href="products.html"><img title=" " alt=" " src="images/12.png" /></a>		
+                            <p>Nestle-a-slim</p>
+                            <div className="stars">
+                              <i className="fa fa-star blue-star" aria-hidden="true" />
+                              <i className="fa fa-star blue-star" aria-hidden="true" />
+                              <i className="fa fa-star blue-star" aria-hidden="true" />
+                              <i className="fa fa-star blue-star" aria-hidden="true" />
+                              <i className="fa fa-star gray-star" aria-hidden="true" />
+                            </div>
+                            <h4>$20.99 <span>$35.00</span></h4>
+                          </div>
+                          <div className="snipcart-details top_brand_home_details">
+                            <form action="#" method="post">
+                              <fieldset>
+                                <input type="hidden" name="cmd" defaultValue="_cart" />
+                                <input type="hidden" name="add" defaultValue={1} />
+                                <input type="hidden" name="business" defaultValue=" " />
+                                <input type="hidden" name="item_name" defaultValue="basmati rise" />
+                                <input type="hidden" name="amount" defaultValue="20.99" />
+                                <input type="hidden" name="discount_amount" defaultValue={1.00} />
+                                <input type="hidden" name="currency_code" defaultValue="USD" />
+                                <input type="hidden" name="return" defaultValue=" " />
+                                <input type="hidden" name="cancel_return" defaultValue=" " />
+                                <input type="submit" name="submit" defaultValue="Add to cart" className="button" />
+                              </fieldset>
+                            </form>
+                          </div>
+                        </div>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-4 top_brand_left">
+                <div className="hover14 column">
+                  <div className="agile_top_brand_left_grid">
+                    <div className="agile_top_brand_left_grid_pos">
+                      <img src="images/offer.png" alt=" " className="img-responsive" />
+                    </div>
+                    <div className="agile_top_brand_left_grid1">
+                      <figure>
+                        <div className="snipcart-item block">
+                          <div className="snipcart-thumb">
+                            <a href="products.html"><img src="images/13.png" alt=" " className="img-responsive" /></a>
+                            <p>Bread-sandwich</p>
+                            <div className="stars">
+                              <i className="fa fa-star blue-star" aria-hidden="true" />
+                              <i className="fa fa-star blue-star" aria-hidden="true" />
+                              <i className="fa fa-star blue-star" aria-hidden="true" />
+                              <i className="fa fa-star blue-star" aria-hidden="true" />
+                              <i className="fa fa-star gray-star" aria-hidden="true" />
+                            </div>
+                            <h4>$40.99 <span>$65.00</span></h4>
+                          </div>
+                          <div className="snipcart-details top_brand_home_details">
+                            <form action="#" method="post">
+                              <fieldset>
+                                <input type="hidden" name="cmd" defaultValue="_cart" />
+                                <input type="hidden" name="add" defaultValue={1} />
+                                <input type="hidden" name="business" defaultValue=" " />
+                                <input type="hidden" name="item_name" defaultValue="Pepsi soft drink" />
+                                <input type="hidden" name="amount" defaultValue={40.00} />
+                                <input type="hidden" name="discount_amount" defaultValue={1.00} />
+                                <input type="hidden" name="currency_code" defaultValue="USD" />
+                                <input type="hidden" name="return" defaultValue=" " />
+                                <input type="hidden" name="cancel_return" defaultValue=" " />
+                                <input type="submit" name="submit" defaultValue="Add to cart" className="button" />
+                              </fieldset>
+                            </form>
+                          </div>
+                        </div>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="clearfix"> </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </section>
-  
+  </div>
+</div>
 
-     <script src="js/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.scrollUp.min.js"></script>
-	<script src="js/price-range.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/main.js"></script>
-
-
-        </div>
-    )
+       )
 }
