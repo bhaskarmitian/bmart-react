@@ -1,0 +1,41 @@
+{
+	"advertised ": [{
+			"name": "Tata-Salt",
+			"rating": 4,
+			"price": 100,
+			"discountedPrice": 85
+		},
+		{
+			"name": "Fortune-Sunflower",
+			"rating": 5,
+			"price": 100,
+			"discountedPrice": 85
+		},
+		{
+			"name": "Aashirvaad-Atta",
+			"rating": 4,
+			"price": 101,
+			"discountedPrice": 90
+		},
+		{
+			"name": "Sampann-Toor-Dal",
+			"rating": 3,
+			"price": 400,
+			"discountedPrice": 305
+		},
+		{
+			"name": "Parryss-Sugar",
+			"rating": 3,
+			"price": 405,
+			"discountedPrice": 400
+		},
+		{
+			"name": "Saffola-Gold",
+			"rating": 5,
+			"price": 200,
+			"discountedPrice": 150
+		}
+
+	]
+
+}
