@@ -43,7 +43,7 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-## command need to execute
+## Command need to execute
 
 npm install --save @types/react-redux
 
