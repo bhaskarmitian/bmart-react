@@ -56,3 +56,5 @@ npm install --save @types/redux-devtools
 npm install --save typescript-fsa-redux-saga
 
 npm install --save redux-saga
+
+npm install --save react-lazy-load

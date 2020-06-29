@@ -1,4 +1,11 @@
 import React from 'react'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
 
 export default function Toolbar() {
   return (
@@ -8,13 +15,13 @@ export default function Toolbar() {
   <div className="agileits_header">
     <div className="container">
       <div className="w3l_offers">
-        <p>SALE UP TO 70% OFF. USE CODE "SALE70%" . <a href="products.html">SHOP NOW</a></p>
+        <p>SALE UP TO 70% OFF. USE CODE "SALE70%" . <Link to="products">SHOP NOW</Link></p>
       </div>
       <div className="agile-login">
         <ul>
-          <li><a href="registered.html"> Create Account </a></li>
-          <li><a href="login.html">Login</a></li>
-          <li><a href="contact.html">Help</a></li>
+          <li><Link to="/registration">Create Account</Link></li>
+          <li><Link to="/login">Login</Link></li>
+          <li><Link to="/help">Help</Link></li>
         </ul>
       </div>
       <div className="product_list_header">  

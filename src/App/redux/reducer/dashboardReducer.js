@@ -1,7 +1,6 @@
 // import { Clients } from '../interface/PhysicalMachines/Clients';
-
-const advertisedList = require('../../dummies/dashboard_json.json');
-
+//const advertisedList = require('../../dummies/dashboard_json.json');
+const advertisedList = require('../../common/dummies/dashboard_json.json');
 console.log(advertisedList)
 
 function populateAdvertisedOffer(state, action) {
