@@ -3,7 +3,7 @@ import Layout from './Layout';
 import { NAV_LIST} from "./configComponents";
 
 function App() {
-  const appRoutes = NAV_LIST.map(page => page.path);
+  const appRoutes = NAV_LIST.map(page => page);
 //   console.log("appRoutes  "+appRoutes)
 //   if (
 //     authRoutes.includes(currentRoute) ||
@@ -28,11 +28,15 @@ function App() {
 //   );
 // }
   return (
-  
-    <Layout/>
-      //  <Layout {...{ title: page.title }}>
-      //       {React.createElement(page.component)}
-      //  </Layout>
+    <Layout {...{ title: appRoutes.name }}>{React.createElement(appRoutes.component)}</Layout>
+    // if(appRoutes.includes('/login')){
+    //   <Layout {...{ title: appRoutes.name }}>{React.createElement(appRoutes.component)}</Layout>
+    // }else{
+    //   <Layout {...{ title: appRoutes.name }}>{React.createElement(appRoutes.component)}</Layout>
+    // }
+
+    
+        
   );
 }
 
