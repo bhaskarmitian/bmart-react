@@ -3,8 +3,10 @@ import Layout from './Layout';
 import { NAV_LIST} from "./configComponents";
 
 function App() {
-  const appRoutes = NAV_LIST.map(page => page);
-//   console.log("appRoutes  "+appRoutes)
+  //const appRoutes = NAV_LIST.map(page => page);
+ const appRoutes = NAV_LIST[1];
+  console.log("appRoutes  "+appRoutes.name +"  "+appRoutes.path);
+  
 //   if (
 //     authRoutes.includes(currentRoute) ||
 //     (props.auth.isAuthenticated && !appRoutes.includes(currentRoute))
@@ -28,15 +30,9 @@ function App() {
 //   );
 // }
   return (
-    <Layout {...{ title: appRoutes.name }}>{React.createElement(appRoutes.component)}</Layout>
-    // if(appRoutes.includes('/login')){
-    //   <Layout {...{ title: appRoutes.name }}>{React.createElement(appRoutes.component)}</Layout>
-    // }else{
-    //   <Layout {...{ title: appRoutes.name }}>{React.createElement(appRoutes.component)}</Layout>
-    // }
-
     
-        
+    <Layout  {...appRoutes}>{React.createElement(appRoutes.component)}</Layout>
+   
   );
 }
 
