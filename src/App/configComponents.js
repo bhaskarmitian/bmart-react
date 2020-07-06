@@ -5,11 +5,17 @@ import AdvertisedOffers from './Dashboard/AdvertisedOffers/AdvertisedOffers'
 import Login from './Auth/Login';
 
 export const NAV_LIST = [
+  // {
+  //   name: "AdvertisedOffers",
+  //   path: "/",
+  //   component: AdvertisedOffers
+  // },
     {
       name: "AdvertisedOffers",
       path: "/advertisedOffers",
       component: AdvertisedOffers
     },
+   
     {
       name: "Login",
       path: "/login",
