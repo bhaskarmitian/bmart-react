@@ -5,7 +5,7 @@ import Footer from './Footer';
 import AdvertisedOffers from '../Dashboard/AdvertisedOffers/AdvertisedOffers';
 
 const Layout = (props) => {
-  console.log(props);
+  //console.log(props);
   return (
     <div>
       <Toolbar />
