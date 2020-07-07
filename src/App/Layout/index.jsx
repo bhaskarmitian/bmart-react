@@ -2,7 +2,7 @@ import React from 'react';
 //import Sidebar from './Sidebar';
 import Toolbar from './Toolbar';
 import Footer from './Footer';
-import AdvertisedOffers from '../Dashboard/AdvertisedOffers/AdvertisedOffers';
+//import AdvertisedOffers from '../Dashboard/AdvertisedOffers/AdvertisedOffers';
 
 const Layout = (props) => {
   //console.log(props);
