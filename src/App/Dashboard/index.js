@@ -4,10 +4,7 @@ import TodayOffers from './TodayOffers/TodayOffers';
 
 const Dashboard=(props)=> {
 
- // const [showResults, setShowResults] = React.useState(true)
   const [page, setPage] = useState("advertisedOffers");
-  //const onClick = () => setShowResults(false)
-
     return (
 <div className="top-brands">
   <div className="container">

@@ -11,7 +11,7 @@ declare global {
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const rootReducer = combineReducers({
-  dashboardReducer: dashboardReducer
+  advertisedReducer: dashboardReducer
 });
 const sagaMiddleware = createSagaMiddleware();
 const store = createStore(
