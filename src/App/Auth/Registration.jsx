@@ -1,7 +1,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 
-const Registration=()=>{
+export default function Registration(){
   const { register, handleSubmit, watch, errors } = useForm();
   const onSubmit = data => {
     console.log(data);
@@ -46,4 +46,3 @@ const Registration=()=>{
 }
 
 
-export default Registration;
