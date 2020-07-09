@@ -1,7 +1,9 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import { connect } from 'react-redux';
 
-export default function Registration(){
+ const Registration=(props)=>{
+   console.log(props);
   const { register, handleSubmit, watch, errors } = useForm();
   const onSubmit = data => {
     ///Server Side Codes Goes here
@@ -23,7 +25,7 @@ export default function Registration(){
         </div>
         </div>
         <h6>Login information</h6>
-        <input  name="email" type="text" placeholder="Email..."  ref={register({ required: true,
+        <input  name="email"  type="text" placeholder="Email..."  ref={register({ required: true,
         pattern: {
           value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
           message: "invalid email address"
@@ -53,4 +55,7 @@ export default function Registration(){
   )
 }
 
-
+const mapStateToProps=(state)=>{
+  return{ registration: state.loginReducer};
+}
+export default connect(mapStateToProps, null)(Registration);
