@@ -81,7 +81,7 @@ export default function Toolbar() {
                 <div className="multi-gd-img">
                   <ul className="multi-column-dropdown">
                     <h6>All Groceries</h6>
-                    <li><a href="groceries.html">Dals &amp; Pulses</a></li>
+                    <li><Link to="/dal">Dals &amp; Pulses</Link></li>
                     <li><a href="groceries.html">Almonds</a></li>
                     <li><a href="groceries.html">Cashews</a></li>
                     <li><a href="groceries.html">Dry Fruit</a></li>

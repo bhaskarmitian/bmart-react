@@ -15,7 +15,7 @@ const AdvertisedOffers = (props)=>{
   <div className="agile_top_brands_grids">
       {props.advertisedList["advertised"].map((value, i) => {
              return <AdvertisedOffer key={i} value={value}/>;
-     })}  
+      })}  
      <div className="clearfix"> </div>  
 </div>
  </div>

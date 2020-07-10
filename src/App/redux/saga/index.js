@@ -8,4 +8,7 @@ function* workerSaga(){
 export function* rootSaga() {
   console.log("rootSaga");
   yield takeEvery('Hello', workerSaga);
+  //yield takeEvery('Hello', workerSaga);
+  //yield takeEvery('Hello', workerSaga);
+
 }

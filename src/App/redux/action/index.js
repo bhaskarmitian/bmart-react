@@ -6,7 +6,7 @@ export function advertisedOffer() {
   };
 }
 
-export function populateAdvertisedOffer() {
+export function populateAdvertisedOffer(param) {
   return {
     type: types.POPULATE_ADVERTISED_OFFER,
     param,

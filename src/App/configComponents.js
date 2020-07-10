@@ -4,7 +4,8 @@
 import Dashboard from './Dashboard/index'
 import Login from './Auth/Login';
 import Registration from './Auth/Registration';
-
+import Help from './Auth/Help';
+import Grocery from './Navigation/Grocery'
 
 export const NAV_LIST = [
    {
@@ -22,5 +23,15 @@ export const NAV_LIST = [
       name: "Login",
       path: "/login",
       component: Login
+    },
+    {
+      name: "grocery",
+      path: "/grocery",
+      component: Grocery
+    },
+    {
+      name: "Help",
+      path: "/help",
+      component: Help
     }
   ];
