@@ -58,3 +58,5 @@ npm install --save typescript-fsa-redux-saga
 npm install --save redux-saga
 
 npm install --save react-lazy-load
+
+npm install axios

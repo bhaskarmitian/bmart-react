@@ -1,10 +1,16 @@
-import React from 'react';
+import React,{useState,useEffect } from 'react';
 import AdvertisedOffer from './AdvertisedOffer';
 import { connect } from 'react-redux';
+import axios from 'axios';
+import productservice from '../../api/productservice';
+import * as actions from '../../redux/action';
+import { bindActionCreators } from 'redux';
 
 const AdvertisedOffers = (props)=>{
-//console.log(props.advertisedList);
-//const advertisedItem=Object.key(props.advertisedList)
+  
+ //  productservice.getAdvertisedProduct()
+ //  .then(response => dispatch(actions.populateAdvertisedOffer(JSON.parse(response))));
+
  return(
 
 <div role="tabpanel" className="tab-pane fade active in" id="expeditions" aria-labelledby="expeditions-tab">
@@ -13,6 +19,8 @@ const AdvertisedOffers = (props)=>{
     <p className="w3l-ad">We've pulled together all our advertised offers into one place, so you won't miss out on a great deal.</p>
   </div>
   <div className="agile_top_brands_grids">
+
+
       {props.advertisedList["advertised"].map((value, i) => {
              return <AdvertisedOffer key={i} value={value}/>;
       })}  
@@ -27,7 +35,7 @@ const mapStateToProps=(state)=> {
     advertisedList: state.advertisedReducer
   };
 }
-// function mapDispatchToProps(dispatch: any) {
-//   return bindActionCreators({}, dispatch);
-// }
+//  function mapDispatchToProps(dispatch) {
+//    return bindActionCreators({action.populateAdvertisedOffer}, dispatch);
+//  }
 export default connect(mapStateToProps, null)(AdvertisedOffers);

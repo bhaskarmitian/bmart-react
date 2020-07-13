@@ -3,11 +3,11 @@ import { useForm } from "react-hook-form";
 import { connect } from 'react-redux';
 
  const Registration=(props)=>{
-   console.log(props);
+  // console.log(props);
   const { register, handleSubmit, watch, errors } = useForm();
   const onSubmit = data => {
     ///Server Side Codes Goes here
-    console.log(data);
+   // console.log(data);
   }
   console.log(watch("firstName"));
   return(

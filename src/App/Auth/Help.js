@@ -19,7 +19,6 @@ const addItem=(e)=>{
 }
 
 const deleteItem=(id)=>{
- console.log("deleteItem");
  setInputItem((oldvalue)=>{
     return oldvalue.filter((arrEle,i)=>{
         return i!==id;
