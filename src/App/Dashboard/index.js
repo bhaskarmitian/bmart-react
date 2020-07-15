@@ -1,10 +1,30 @@
-import React,{ useState } from 'react';
+import React,{ useState,useEffect } from 'react';
 import AdvertisedOffers from './AdvertisedOffers/AdvertisedOffers';
 import TodayOffers from './TodayOffers/TodayOffers';
+import axios from 'axios';
+import productservice from '../api/productservice';
+import {todayOffersPayload} from '../redux/action/index'
+import { connect } from 'react-redux';
 
 const Dashboard=(props)=> {
 
   const [page, setPage] = useState("advertisedOffers");
+  const [getTodaysOfferResp, setTodaysOffer] = useState([]);
+ 
+  useEffect(() => {
+    console.log("useeffect")
+    productservice.getAdvertisedProduct()
+     .then(res => {
+          setTodaysOffer(res.data);
+            //setLoad(true);
+     })
+        .catch(err => {
+            //setError(err.message);
+            //setLoad(true)
+        })
+   }, []);
+
+
     return (
 <div className="top-brands">
   <div className="container">
@@ -19,7 +39,7 @@ const Dashboard=(props)=> {
         <div id="myTabContent" className="tab-content">
          {page === "advertisedOffers" ? <AdvertisedOffers/> : <TodayOffers/>}
 
-
+         {console.log(page)}
 
         </div>
         </div>
@@ -30,5 +50,12 @@ const Dashboard=(props)=> {
     </div>
     );
 }
+const mapDispatchToProps = dispatch => ({
+  todayOffersPayload: getTodaysOfferResp => {
+  dispatch(todayOffersPayload(getTodaysOfferResp));
+   // dispatch(navigateTo({ routeName: 'messagesList' }));
+  },
+ });
 
-export default Dashboard;
+ export default connect(null, mapDispatchToProps)(Dashboard); 
+//export default Dashboard;

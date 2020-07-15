@@ -12,3 +12,15 @@ export function populateAdvertisedOffer(param) {
     param,
   };
 }
+export function todayOffers() {
+  return {
+    type: types.TODAY_OFFER,
+  };
+}
+
+export function todayOffersPayload(param) {
+  return {
+    type: types.TODAY_OFFER_PAYLOAD,
+    param,
+  };
+}
