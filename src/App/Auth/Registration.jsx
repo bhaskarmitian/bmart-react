@@ -1,4 +1,4 @@
-import React from "react";
+import React ,{useState} from "react";
 import { useForm } from "react-hook-form";
 import { connect } from 'react-redux';
 
@@ -10,6 +10,14 @@ import { connect } from 'react-redux';
    // console.log(data);
   }
   console.log(watch("firstName"));
+  const [isOpened, setIsOpened] = useState(false);
+
+
+  function toggle() {
+    setIsOpened(wasOpened => !wasOpened);
+  }
+ 
+
   return(
 <div className="register">
   <div className="container">
@@ -37,11 +45,30 @@ import { connect } from 'react-redux';
         {errors.password && <span style={{color: "red"}}>This field is required</span>}<br></br>
         <input  name="passwordConfirmation" type="password" placeholder="password Confirmation..."  ref={register({ required: true })} /><br></br>
         {errors.passwordConfirmation && <span style={{color: "red"}}>This field is required</span>}<br></br>
+       
+        {isOpened && (
+        <div className="boxContent">
+           <input  name="passwordConfirmation" type="password" placeholder="password Confirmation..."  ref={register({ required: true })} /><br></br>
+        </div>
+      )}
+       
+       
         <div className="register-check-box">
           <div className="check">
+            
             <label className="checkbox"><input type="checkbox" name="checkbox" /><i> </i>I accept the terms and conditions</label>
           </div>
         </div>
+        <label className="checkbox"><input type="checkbox" name="Natioality" onClick={toggle} /><i> </i>Nationality</label>
+ 
+       
+
+
+
+
+
+
+
         <input type="submit" value="Submit" /><br></br>
       </form>
      
