@@ -9,8 +9,12 @@ const dashboardReducer = (state= advertisedList, action) => {
     case 'ADVERTISED_OFFER':
       return state;
     case 'POPULATE_ADVERTISED_OFFER':
-      return populateAdvertisedOffer(state, action);
-
+      // return populateAdvertisedOffer(state, action);
+      return state;
+    case 'TODAY_OFFER_PAYLOAD':
+      console.log(action)
+        return state;
+  
     default:
       return state;
   }

@@ -3,28 +3,43 @@ import AdvertisedOffers from './AdvertisedOffers/AdvertisedOffers';
 import TodayOffers from './TodayOffers/TodayOffers';
 import axios from 'axios';
 import productservice from '../api/productservice';
-import {todayOffersPayload} from '../redux/action/index'
+import {TODAY_OFFER_PAYLOAD} from '../redux/type'
 import { connect } from 'react-redux';
+import {todayOffersPayload} from '../redux/action/index'
 
 const Dashboard=(props)=> {
 
   const [page, setPage] = useState("advertisedOffers");
-  const [getTodaysOfferResp, setTodaysOffer] = useState([]);
+  const [todaysOffer, setTodaysOffer] = useState([]);
  
-  useEffect(() => {
-    console.log("useeffect")
-    productservice.getAdvertisedProduct()
-     .then(res => {
-          setTodaysOffer(res.data);
-            //setLoad(true);
+  // useEffect(() => {
+  //   productservice.getAdvertisedProduct()
+  //    .then(res => {
+  //     // console.log(props)
+  //         //setTodaysOffer(res.data);
+  //           //setLoad(true);
+  //           props.todayOffersPayload1(res.data)
+  //    })
+  //       .catch(err => {
+  //           //setError(err.message);
+  //           //setLoad(true)
+  //       })
+  //  }, []);
+ const updateTodaysOffer=()=>{
+  productservice.getAdvertisedProduct()
+  .then(res => {
+    //console.log(props)
+         props.todayOffersAction(res.data)
+  })
+     .catch(err => {
+         //setError(err.message);
+         //setLoad(true)
      })
-        .catch(err => {
-            //setError(err.message);
-            //setLoad(true)
-        })
-   }, []);
+
+  setPage("todayOffers");
 
 
+ }
     return (
 <div className="top-brands">
   <div className="container">
@@ -33,14 +48,12 @@ const Dashboard=(props)=> {
       <div className="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
         <ul id="myTab" className="nav nav-tabs" role="tablist">
           <li role="presentation" className="active"><a id="expeditions-tab" role="tab" data-toggle="tab" aria-controls="expeditions" aria-expanded="true" onClick={()=>setPage("advertisedOffers")}>Advertised offers</a></li>
-          <li role="presentation"><a role="tab" id="tours-tab" data-toggle="tab" aria-controls="tours" onClick={()=>setPage("todayOffers")}>Today Offers</a></li>
+          {/* <li role="presentation"><a role="tab" id="tours-tab" data-toggle="tab" aria-controls="tours" onClick={()=>setPage("todayOffers")}>Today Offers</a></li> */}
+          <li role="presentation"><a role="tab" id="tours-tab" data-toggle="tab" aria-controls="tours" onClick={() => updateTodaysOffer()}>Today Offers</a></li>
         </ul>
 
         <div id="myTabContent" className="tab-content">
          {page === "advertisedOffers" ? <AdvertisedOffers/> : <TodayOffers/>}
-
-         {console.log(page)}
-
         </div>
         </div>
     </div>
@@ -50,12 +63,10 @@ const Dashboard=(props)=> {
     </div>
     );
 }
-const mapDispatchToProps = dispatch => ({
-  todayOffersPayload: getTodaysOfferResp => {
-  dispatch(todayOffersPayload(getTodaysOfferResp));
-   // dispatch(navigateTo({ routeName: 'messagesList' }));
-  },
- });
+  const mapDispatchToProps = dispatch => ({
+    todayOffersAction: data => {
+     dispatch(todayOffersPayload(data));
+    },
+   });
 
  export default connect(null, mapDispatchToProps)(Dashboard); 
-//export default Dashboard;
