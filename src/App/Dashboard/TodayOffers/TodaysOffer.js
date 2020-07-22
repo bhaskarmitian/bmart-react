@@ -35,7 +35,8 @@ const TodaysOffer=(props)=> {
                         <input type="hidden" name="currency_code" defaultValue="USD" />
                         <input type="hidden" name="return" defaultValue=" " />
                         <input type="hidden" name="cancel_return" defaultValue=" " />
-                        <input type="submit" name="submit" defaultValue="Add to cart" className="button" />
+                        <input type="submit" name="submit" defaultValue="Add to cart" 
+                        className="button" />
                         </fieldset>
                     </form>
                     </div>

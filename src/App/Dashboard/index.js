@@ -25,6 +25,7 @@ const Dashboard=(props)=> {
   //           //setLoad(true)
   //       })
   //  }, []);
+ let shadesEl=""
  const updateTodaysOffer=()=>{
   productservice.getAdvertisedProduct()
   .then(res => {
@@ -37,23 +38,26 @@ const Dashboard=(props)=> {
      })
 
   setPage("todayOffers");
-
+  shadesEl="active"
 
  }
-    return (
+  
+return (
 <div className="top-brands">
   <div className="container">
     <h2>Top selling offers</h2>
     <div className="grid_3 grid_5">
-      <div className="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+      <div className="bs-example bs-example-tabs" role="tabpanel" >
         <ul id="myTab" className="nav nav-tabs" role="tablist">
-          <li role="presentation" className="active"><a id="expeditions-tab" role="tab" data-toggle="tab" aria-controls="expeditions" aria-expanded="true" onClick={()=>setPage("advertisedOffers")}>Advertised offers</a></li>
+          <li role="presentation" className={shadesEl}><a id="expeditions-tab" role="tab"  aria-controls="expeditions" aria-expanded="true" onClick={()=>setPage("advertisedOffers")}>Advertised offers</a></li>
           {/* <li role="presentation"><a role="tab" id="tours-tab" data-toggle="tab" aria-controls="tours" onClick={()=>setPage("todayOffers")}>Today Offers</a></li> */}
-          <li role="presentation"><a role="tab" id="tours-tab" data-toggle="tab" aria-controls="tours" onClick={() => updateTodaysOffer()}>Today Offers</a></li>
+          <li role="presentation" className={shadesEl}><a role="tab" id="tours-tab"  aria-controls="tours" onClick={() => updateTodaysOffer()}>Today Offers</a></li>
         </ul>
 
         <div id="myTabContent" className="tab-content">
          {page === "advertisedOffers" ? <AdvertisedOffers/> : <TodayOffers/>}
+
+         {console.log(shadesEl)}
         </div>
         </div>
     </div>

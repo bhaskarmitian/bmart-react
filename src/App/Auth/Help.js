@@ -37,6 +37,7 @@ const deleteItem=(id)=>{
 
                     {
                         inputItem.map((item,i)=>{
+                            
                         return <ToDoList key={i} id={i} text={item} onSelect={deleteItem}/>
                         }
                         
